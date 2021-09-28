@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProgrammersBlog.Services</name>
+    </assembly>
+    <members>
+        <member name="M:ProgrammersBlog.Services.Abstract.ICategoryService.GetCategoryUpdateDtoAsync(System.Int32)">
+            <summary>
+            Verilen ID parametresine ait Kategorinin CategoryUpdateDto Temsilini Geriye Döner.
+            </summary>
+            <param name="categoryId">0'dan Büyük İnteger Bir ID Değeri</param>
+            <returns>Asenkron Bir Operasyon İle Task Olarak İşlem Sonucu DataResult Tipinde Geriye Döner.</returns>
+        </member>
+        <member name="M:ProgrammersBlog.Services.Abstract.ICategoryService.AddAsync(ProgrammersBlog.Entities.Dtos.CategoryAddDto,System.String)">
+            <summary>
+            Verilen CategoryAddDto ve CreatedByName parametrelerine ait bilgiler ile yeni bir Category Ekler.
+            </summary>
+            <param name="categoryAddDto">categoryAddDto tipinde eklenecek kategori bilgileri</param>
+            <param name="createdByName">String tipinde kullanıcının kullanıcı adı</param>
+            <returns>Asenkron bir operasyon ile Task olarak bizlere ekleme işleminin sonucunu DataResult tipinde döner.</returns>
+        </member>
+        <member name="M:ProgrammersBlog.Services.Concrete.CategoryManager.AddAsync(ProgrammersBlog.Entities.Dtos.CategoryAddDto,System.String)">
+            <summary>
+            Verilen CategoryAddDto ve CreatedByName parametrelerine ait bilgiler ile yeni bir Category Ekler.
+            </summary>
+            <param name="categoryAddDto">categoryAddDto tipinde eklenecek kategori bilgileri</param>
+            <param name="createdByName">String tipinde kullanıcının kullanıcı adı</param>
+            <returns>Asenkron bir operasyon ile Task olarak bizlere ekleme işleminin sonucunu DataResult tipinde döner.</returns>
+        </member>
+        <member name="M:ProgrammersBlog.Services.Concrete.CategoryManager.GetCategoryUpdateDtoAsync(System.Int32)">
+            <summary>
+            Verilen ID parametresine ait Kategorinin CategoryUpdateDto Temsilini Geriye Döner.
+            </summary>
+            <param name="categoryId">0'dan Büyük İnteger Bir ID Değeri</param>
+            <returns>Asenkron Bir Operasyon İle Task Olarak İşlem Sonucu DataResult Tipinde Geriye Döner.</returns>
+        </member>
+    </members>
+</doc>
